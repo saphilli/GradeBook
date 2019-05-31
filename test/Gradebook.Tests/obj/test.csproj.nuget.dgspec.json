@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sphillips\\gradebook\\test\\Gradebook.Tests\\test.csproj": {}
+    "C:\\Users\\sphillips\\gradebook\\test\\GradeBook.Tests\\test.csproj": {}
   },
   "projects": {
     "C:\\Users\\sphillips\\gradebook\\src\\Gradebook\\GradeBook.csproj": {
@@ -56,14 +56,14 @@
         }
       }
     },
-    "C:\\Users\\sphillips\\gradebook\\test\\Gradebook.Tests\\test.csproj": {
+    "C:\\Users\\sphillips\\gradebook\\test\\GradeBook.Tests\\test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sphillips\\gradebook\\test\\Gradebook.Tests\\test.csproj",
+        "projectUniqueName": "C:\\Users\\sphillips\\gradebook\\test\\GradeBook.Tests\\test.csproj",
         "projectName": "test",
-        "projectPath": "C:\\Users\\sphillips\\gradebook\\test\\Gradebook.Tests\\test.csproj",
+        "projectPath": "C:\\Users\\sphillips\\gradebook\\test\\GradeBook.Tests\\test.csproj",
         "packagesPath": "C:\\Users\\sphillips\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sphillips\\gradebook\\test\\Gradebook.Tests\\obj\\",
+        "outputPath": "C:\\Users\\sphillips\\gradebook\\test\\GradeBook.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
