@@ -7,7 +7,7 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-            var grades = new InMemoryBook("Test Book");
+            IBook grades = new DiskBook("Test Book");
             grades.GradeAdded += OnGradeAdded;
             var input = "";
             Console.WriteLine("Enter the grades to be added to the book, by typing one grade and pressing enter between each.");
@@ -29,7 +29,7 @@ namespace GradeBook
             finally{
                 Console.WriteLine("The input was invalid, please enter numbers only.");
             }
-            grades.ComputeStats();
+           // grades.ComputeStats();
            
         }
          static void OnGradeAdded(object sender, EventArgs e)
