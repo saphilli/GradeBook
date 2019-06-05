@@ -11,30 +11,29 @@ namespace GradeBook
             grades.GradeAdded += OnGradeAdded;
             var input = "";
             Console.WriteLine("Enter the grades to be added to the book, by typing one grade and pressing enter between each.");
-            try{
+            Console.WriteLine("Enter s or S to stop");
                 while(true) {
-                    input = Console.ReadLine();
-                    if(input == "S "||input == "s"){ 
-                        break; 
+                    try{
+                        input = Console.ReadLine();
+                        if(input == "S"||input == "s"){ 
+                            grades.PrintStatistics();
+                            break; 
+                        }
+                        grades.AddGrade(double.Parse(input));
+
                     }
-                    grades.AddGrade(double.Parse(input));
+                    catch(ArgumentException){
+                         Console.WriteLine("The input was invalid, please enter numbers only.");
+                    }
+                    catch(FormatException){
+                        Console.WriteLine("The input was invalid, please enter numbers only.");
+                    }
                 }
-            }
-            catch(ArgumentException e){
-               Console.WriteLine(e.Message);
-            }
-            catch(FormatException e){
-                Console.WriteLine(e.Message);
-            }
-            finally{
-                Console.WriteLine("The input was invalid, please enter numbers only.");
-            }
-           // grades.ComputeStats();
            
         }
          static void OnGradeAdded(object sender, EventArgs e)
          {
-             Console.WriteLine("The grade was added");
+             Console.WriteLine("The grade was added to the gradebook.");
          }
     }
 }

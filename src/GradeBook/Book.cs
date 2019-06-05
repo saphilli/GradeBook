@@ -9,8 +9,16 @@ namespace GradeBook {
         }
         public abstract void AddGrade(double grade);
         public abstract event GradeAddedDelegate GradeAdded;
-        //public abstract Stats GetStatistics();
+        public abstract Stats GetStatistics();
+        public virtual void PrintStatistics(){
+            var stats = GetStatistics();
+            Console.WriteLine($"Maximum Grade:{stats.Highest}");
+            Console.WriteLine($"Minimum Grade:{stats.Lowest}");
+            Console.WriteLine($"Average Grade:{stats.Average:n1}");
+        }
+
     }
 }
+
 
    
